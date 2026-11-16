@@ -1,0 +1,21 @@
+node_modules/
+dist/
+dist-root/
+build/
+.env*
+.mcp.json
+.claude/
+.claude-flow/
+.vscode/
+__pycache__/
+*.pyc
+*.apk
+*.zip
+*.log
+# secrets / environment specific
+backend/hostinger/api/config.php
+backend/hostinger/deploy/backups/
+backend/hostinger/deploy/demo_accounts.json
+backend/hostinger/deploy/seed_demo_accounts.py
+backend/hostinger/deploy/test_config*.php
+Enterprise-ERP-System-Design/tests/ui/

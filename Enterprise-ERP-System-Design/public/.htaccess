@@ -1,0 +1,7 @@
+# Single-page app served from /app/: every unknown path opens index.html (the router decides)
+RewriteEngine On
+RewriteBase /app/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /app/index.html [L]

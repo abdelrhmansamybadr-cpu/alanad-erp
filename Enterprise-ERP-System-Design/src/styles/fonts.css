@@ -1,0 +1,37 @@
+/* ── Density scaling ──────────────────────────────────────────── */
+[data-density="compact"] {
+  --font-size: 13.5px;
+  --spacing-scale: 0.8;
+}
+[data-density="comfortable"] {
+  --font-size: 16px;
+  --spacing-scale: 1;
+}
+[data-density="spacious"] {
+  --font-size: 17.5px;
+  --spacing-scale: 1.2;
+}
+
+/* ── RTL helpers ──────────────────────────────────────────────── */
+[dir="rtl"] {
+  font-family: "Cairo", "Tajawal", "Segoe UI", "Tahoma", "Arial", sans-serif;
+}
+
+[dir="rtl"] .rtl-flip-icon {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .rtl-mirror {
+  transform: scaleX(-1);
+}
+
+/* ── Smooth theme transition ──────────────────────────────────── */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.15s ease;
+}
+
+/* ── Prevent horizontal overflow globally ─────────────────────── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
